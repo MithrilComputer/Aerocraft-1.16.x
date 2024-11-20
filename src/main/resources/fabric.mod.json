@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "aerocraft",
+	"version": "${version}",
+	"name": "Aerocraft",
+	"description": "Take to the skies with realistic aircraft in Minecraft! Build, pilot, and explore the world from above with customizable planes.",
+	"authors": [
+		"MithrilMods",
+		"Ilyoow"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/aerocraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.mithrilmods.aerocraft.AeroCraft"
+		],
+		"client": [
+			"com.mithrilmods.aerocraft.AeroCraftModClient"
+		]
+	},
+	"mixins": [
+		"aerocraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.16.5",
+		"java": ">=8",
+		"fabric": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
